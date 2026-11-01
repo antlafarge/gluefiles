@@ -1,0 +1,7 @@
+{
+  "htmlWhitespaceSensitivity": "strict",
+  "jsxSingleQuote": true,
+  "printWidth": 120,
+  "quoteProps": "consistent",
+  "singleQuote": true
+}

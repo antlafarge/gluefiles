@@ -1,0 +1,45 @@
+{
+  "name": "gluefiles",
+  "description": "Glue multiple files to one file",
+  "homepage": "https://github.com/user/repo",
+  "author": "Antoine Lafarge (ant.lafarge@gmail.com)",
+  "publicUrl": "http://example.com",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/user/repo/issues"
+  },
+  "scripts": {
+    "start": "npm run production",
+    "clean": "npx rimraf dist",
+    "build": "tsc",
+    "build:sea": "npm run build && node ./scripts/build-sea.mjs",
+    "prerebuild": "npm run clean",
+    "rebuild": "npm run build",
+    "development": "tsx ./src/index.ts",
+    "preproduction": "npm run build",
+    "production": "node ./dist/index.js",
+    "staging": "tsx ./src/index.ts",
+    "test": "tsx ./test/tests.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write ./src"
+  },
+  "main": "./dist/index.js",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.6.6",
+    "esbuild": "^0.28.2",
+    "eslint": "10.14.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1"
+  }
+}

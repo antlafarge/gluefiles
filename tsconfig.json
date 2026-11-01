@@ -1,0 +1,30 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", ".vscode", "dist"],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "lib": ["ESNext", "DOM", "WebWorker"],
+    "rootDir": "src",
+    "sourceRoot": "src",
+    "outDir": "dist",
+    "paths": {
+      "@": ["./src/*"]
+    },
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "inlineSourceMap": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "allowJs": false,
+    "checkJs": false,
+    "strict": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true
+  }
+}
